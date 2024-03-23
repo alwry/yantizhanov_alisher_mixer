@@ -1,3 +1,96 @@
 .hidden {
     display: none;
 }
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: inherit;
+    color: #fafafa;
+}
+
+
+p {
+    font-family: 'Manrope', Helvetica, sans-serif;
+    line-height: 1;
+}
+
+.subheader {
+    font-size: 16px;
+    color: #B8FF43;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.button-text {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 48px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#tall {
+    height: 420px;
+    background-color: #d4d4d420;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-box {
+    height: 170px;
+    background-color: #d4d4d420;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4d4d420;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#reset {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#play {
+    border: 2px solid #B8FF43;
+}
+
+.icon-hov {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.icon-hov:hover, .button:first-of-type:hover {
+    box-shadow:inset 0px 0px 0px 1px white;
+    transition: box-shadow .1s ease-in;
+}
+
+
+.icon-hov:hover svg, .button:nth-of-type(2):hover img {
+    height: 40px;
+    transition: height .1s ease-in;
+}
+
+
