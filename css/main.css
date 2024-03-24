@@ -82,13 +82,32 @@ h2 {
     cursor: pointer;
 }
 
-.icon-hov:hover, .button:first-of-type:hover {
+.icon-hov:hover {
     box-shadow:inset 0px 0px 0px 1px white;
     transition: box-shadow .1s ease-in;
 }
 
+.button:first-of-type:hover {
+    box-shadow:inset 0px 0px 0px 1px #1a1a1a;
+    background-color: #B8FF43;
+    color: #1a1a1a;
+    transition: all .1s ease-in;
+}
 
-.icon-hov:hover svg, .button:nth-of-type(2):hover img {
+.icon-hov img {
+    transition: height .1s ease-out;
+}
+
+.icon-hov:hover {
+    background-color: #242424;
+    transition: box-shadow .1s ease-out;
+}
+
+.button:nth-of-type(2):hover {
+    transition: height .1s ease-in;
+}
+
+.icon-hov:hover img, #play:hover svg {
     height: 40px;
     transition: height .1s ease-in;
 }
