@@ -67,10 +67,6 @@ h2 {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-#play {
-    border: 2px solid #B8FF43;
-}
-
 .icon-hov {
     height: 65px;
     display: flex;
@@ -84,32 +80,45 @@ h2 {
 
 .icon-hov:hover {
     box-shadow:inset 0px 0px 0px 1px white;
-    transition: box-shadow .1s ease-in;
+    transition: box-shadow .2s ease-in;
 }
 
 .button:first-of-type:hover {
     box-shadow:inset 0px 0px 0px 1px #1a1a1a;
     background-color: #B8FF43;
     color: #1a1a1a;
-    transition: all .1s ease-in;
+    transition: all .2s ease-in;
 }
 
 .icon-hov img {
-    transition: height .1s ease-out;
+    transition: height .2s ease-out;
 }
 
 .icon-hov:hover {
     background-color: #242424;
-    transition: box-shadow .1s ease-out;
+    transition: box-shadow .2s ease-out;
 }
 
 .button:nth-of-type(2):hover {
-    transition: height .1s ease-in;
+    transition: height .2s ease-in;
 }
 
-.icon-hov:hover img, #play:hover svg {
+.icon-hov:hover img{
     height: 40px;
-    transition: height .1s ease-in;
+    transition: height .2s ease-in;
 }
 
+.spinningcd {
+    animation: spin 3s linear infinite;
+    fill: #B8FF43;
+    transition: fill .8s linear;
+}
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
